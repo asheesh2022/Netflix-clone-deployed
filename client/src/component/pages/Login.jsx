@@ -17,6 +17,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(firebaseAuth, email, password);
     } catch (error) {
+      alert("Please Signin First")
       console.log(error.code);
     }
   };
